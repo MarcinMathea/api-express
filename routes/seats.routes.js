@@ -22,8 +22,12 @@ router.route('/seats').post((req, res) => {
         author: author,
         text: text,
     };
-    db.seats.push(arrayElement);
-    res.json({ message: 'OK' });
+    if (db.seats.some(concert =>
+        concert.day === userData.day && concert.seat === userData.seat)) {
+        res.json({ message: 'This seat is already taken...' });
+    } else {
+        db.seats.push(userData);
+    }
 });
 
 router.route('/seats/:id').put((req, res) => {
