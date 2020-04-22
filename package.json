@@ -11,11 +11,12 @@
     "build": "cd client && yarn install && yarn build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Marcin Mathea <mar.mathea@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
-  }
+  },
+  "repository": "git@github.com:MarcinMathea/api-express.git"
 }
