@@ -15,9 +15,9 @@ const testimonialRoute = require('./routes/testimonials.routes');
 const concertsRoute = require('./routes/concerts.routes');
 const seatsRoute = require('./routes/seats.routes');
 
-app.use('/api', testimonialRoute);
-app.use('/api', concertsRoute);
-app.use('/api', seatsRoute);
+app.use('/', testimonialRoute);
+app.use('/', concertsRoute);
+app.use('/', seatsRoute);
 
 app.use(express.static(path.join(__dirname, '/client/build')));
 
