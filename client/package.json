@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "engines": {
-    "node": "v10.16.3"
+    "node": "v10.x"
     },
   "private": true,
   "dependencies": {
