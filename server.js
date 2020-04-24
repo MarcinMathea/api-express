@@ -4,7 +4,7 @@ const socket = require('socket.io');
 const cors = require('cors');
 
 const app = express();
-const server = app.listen(process.NODE_ENV || 8000, () => { console.log('Server is running on port: 8000') });
+const server = app.listen(process.env.PORT || 8000, () => { console.log('Server is running on port: 8000') });
 const io = socket(server);
 
 app.use(cors());
